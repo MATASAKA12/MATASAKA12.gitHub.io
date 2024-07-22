@@ -1,0 +1,430 @@
+
+<Doctype html>
+<html>
+  <head>
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<style>
+
+  ul.meo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+li.condo a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: #ff0000;
+  color: white;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+div.stabak {
+  background:url(staduim.jpeg) repeat;
+  border: 2px solid black;
+}
+div.trans {
+  margin: 30px;
+  background-color: #ffff00;
+  border: 1px solid black;
+  opacity: 0.5;
+}
+div.trans p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+  #ima  {
+  opacity: 0.2;
+}
+
+
+
+*{box-sizing: border-box;}
+.left{background-color: #ffb300;padding: 20px;float: right;
+  width: 20%;/* the width is 20%, by deflaut */
+}
+.main{background-color: aquamarine;padding: 15px;float: right;width: 20%;
+/* the width is 20%,by default */} 
+.right{background-color: blue;color: #ffffff;padding: 20px;float: right;width: 20%;
+/* the width is 20% by default*/}
+
+/* use a media query to add a break point at  800px: */
+@media screen and (max-width:800px){.left,.main,.right { width:100% ;/* 
+ the width is 100%, when the veiwport is 800px or smaller */}}
+
+ 
+ .first {float: right;width: 20%;text-align: center;
+}
+.first a{background-color: #a8a8a8;padding: 7px;margin-top: 7px;width:100%;
+  display: block;color: #00ff00;
+}
+.center{float: left;width: 60%;padding:0 20px;background-color: aqua;
+}
+.last{background-color: #a8a8a8;text-align: center;padding: 7px;
+margin-top: 7px;width: 30%;}
+@media only screen and(max-width:620px) {/*for  mobile phones:*/
+  .first,.center,.last {width:100px;} }
+.parent-article{margin: 5px;background-color: #ffffff;padding: 5px;}
+.parent-article>h1,.articlef{margin: 9px;padding: 6px;}
+.articlef{background-color: #ff9900;}
+.articlef{color: #ff007b;margin: 5px;padding: 6px;}
+
+table,th,td {
+  border: 2px solid rgb(0, 255, 170);
+  border-collapse: separate;
+}
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+        
+</style>
+</head>>
+  <body style="background-color: #ff0000;">
+
+    <ul class="meo">
+  <li id="active"><a href="#home">Home</a></li>
+  <li class="condo"><a href="#news">News</a></li>
+  <li class="condo"><a href="#contact">Contact</a></li>
+  <li class="condo"><a href="#about">About</a></li>
+</ul>
+
+
+        <nav><a href="https://www.matasakablognu.home.blog">my nav</a></nav>
+        <h2 style="font-size:medium;text-align: center;"><i>
+           kingship pratice</i></h2>
+        <h3 style="background-color: blue;">mylink.html lession </h3>
+        <p>the first writing paragraph</p>
+        <p style="font-size: 10vw;color:  blue;">this text is a responsive
+          zoom in & out to confirm</p>
+          <img id="ima" src="pic_trulli.jpg" width="60" height="50">
+          <table>
+            <tr>
+              <th>name</th><th>date</th>
+            </tr>
+            <tr>
+            <td>chukwuEBUKA</td><td>15 november 2023</td>
+          </tr>
+          </table>
+          <ul>
+  <li>List1</li>
+  <li>list2</li>
+  <li>list3</li>
+</ul>
+<form action="/action_page.php">
+  <label for="see">my first label: </label>
+  <input type="text" id="see" name="see" value="showing as the value"><br>
+  <label for="pwd">password case sensitive: </label>
+  <input type="password" id="pwd" name="pwd">
+  <input type="submit"><br><br>
+  <label for="okn">select drop-list:</label>
+  <select id="okn"name="okn">
+    <option value="pick1">pick1</option>
+    <option value="pick2">pick2</option>
+    <option value="pre slected"selected>pre selected</option>
+    <input type="submit">
+  </select>
+  <hr>
+<textarea name="text" rows="10",cols="30">
+  this is textarea type of form with 10rows&30colums
+</textarea><input type="submit">
+
+<fieldset>
+  <legend>the fieldset&legend covering</legend>
+  <label for="kim">the number1 box</label>
+  <input type="text"id="kim" name="kim" maxlength="20" size="40" 
+  value="can't edit this" readonly><br>
+  <label for="ui">the second box&autofocus</label>
+  <input type="text" id="ui"  name="ui" autofocus size="30">
+  <input type="submit">
+</fieldset><br>
+<input list="collect">
+<datalist id="collect">
+  <option value="take me1">
+  <option value="pre take2">
+  <option value="take from up3">
+</datalist>
+<input type="image" src="thumbsup.png" width="30" height="38"><br>
+<input type="hidden" id="hide it" name="hide it" value="455443">
+
+<input type="reset">
+<br>
+<input type="radio" id="radio1"name="unique name"value="radio1">
+<label for="radio1">the radio1 button</label><br>
+<input type="radio" id="radio2" name="unique name"value="radio2">
+<label for="radio2">the radio2 button</label>
+<input type="submit"name="submit"><br>
+<input type="submit" formaction="/action_page2.php" value="staff submit"><br>
+
+<label for="bb">date of birth:<!--i put minimum date --></label>
+<input type="date" id="bb" min="2000-11-17">
+<input type="submit"><br>
+<label for="hh" >this picks number roll</label>
+<input type="number" id="hh" name="hh" min="o" max="10"><br>
+<label for="mul">mr multiple</label>
+<input  type="file" id="mul" name="mul" multiple><br>
+<label for="set">pattern na fixed types letters and number</label>
+<input type="text" id="set" name="set" pattern="[A-Za-z]{5}" title="omo this one
+no go allow more than 5 letters "><br>
+<label for="stuborn">compulsory</label>
+<input type="text" id="stubborn" name="stubborn" required>
+</form>
+<div class="stabak">
+  <div class="trans">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+
+<hr>
+<p>this is output element,it's a math calculation that adds up ans to output</p>
+<form action="/action_page.php"
+oninput="equal.value=parseInt(f1.value)+parseInt(b2.value)"id="joinform" >
+  <input type="range" id="f1" name="f1" value="10">
+ +
+  <input type="number" id="b2" name="b2" value="90">
+  =
+  <output name="equal" for="f1 b2"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<p>see the form below this paragraph is outside the form 
+  but it is all joined by 1 summit box,done with the id in the action.
+</p>
+<label for="man">joint</label>
+<input type="text" id="man" name="man" form="joinform"><br><hr>
+<form action="/page_action.php" method="get" target="_blank">
+<label for="trans">using formmethod post:</label>
+<input type="text" id="trans" name="trans">
+<input type="submit" formmethod="post" value="Submit button is formmethod post">
+</form>
+<p>the canvas</p>
+<canvas id="na" width="50" height="150" style="border: solid 1px #ff007b;"></canvas>
+<script>
+  var c = document.getElementById("na") ;
+  var ctx = c.getContext("2d") ;
+  ctx.moveTo(0,0) ;
+  ctx.lineTo(200,100) ;
+  ctx.stroke() ;
+</script><br>
+
+<img  id="click" src="pic_trulli.jpg" width="220" height="277">
+<canvas  id="sis" width="250" height="300" style="border: 1px solid #a8a8a8;"></canvas>
+<p> <button onclick="sis()"></button> touch</p>
+<script>
+  function sis() {
+    var c = document.getElementById("sis") ;
+    var ctx = c.getContext("2d") ;
+    var img = document.getElementById("click") ;
+    ctx.drawImage(img,10,10) ;
+  }
+   </script>
+  <svg width="100" height="150">
+    <circle cx="50" cy="50" r="40"
+    stroke="blue" stroke-width="2" fill="red"/>
+  </svg>
+<svg width="80" height="85">
+  <rect width="100" height="90" 
+  style="fill: #ffffff;" stroke-width="10" stroke="#00ff00"/>
+</svg><br>
+<svg width="150" height="200">
+  <rect x="20" y="50" rx="10" ry="10"
+  width="100" height="150"
+  style="fill: rgb(13, 0, 255); stroke: #00ffff; stroke-width: 8;opacity: 0.9;"/>
+</svg>
+<svg width="200" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198" 
+  style="width: 180;height: 180; fill: chocolate;stroke: #ff007b; stroke-width: 10;
+   fill-rule: evenodd;"/>
+</svg>
+<svg width="300" height="150">
+  <defs>
+    <linearGradient id="the sphere" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+       style="stop-color: rgb(0, 200, 255); stop-opacity: 1"/>
+      <stop offset="100%"
+       style="stop-color: rgb(13, 0, 255); stop-opacity: 1"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="(#the sphere)"/>
+  <text fill="#ff0000" font-size="20" font-family="verdana" x="60" y="50">logo svg
+</text>
+</svg><br>
+<object data="thumbsup.png" width="30" height="30">
+</object><br>
+<embed width="100" height="400" src="matasaka.html"><br>
+<audio controls>
+  <source src="p2.mp3" type="audio/mpeg">
+</audio><br>
+
+
+<button onclick="getLocation()">la/lo</button>
+<p id="geo"></p>
+<script>
+  const x = document.getElementById(geo) ;
+  function getLocation() {
+ if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition) ;
+ } else {
+  x.innerHTML= "Geolocation is not supported by this browser.";
+ }
+  } 
+  function  showPosition(position) {
+    x.innerHTML = "Latitude:" + position.coords.latitude
+     + 
+    "<br>Longitude:" + position.coords.longitude ;
+  }
+
+</script>
+
+<iframe width="350" height="200" src="https://www.youtube.com/embed/mL9dXgMl51k"></iframe>
+<video width="400" height="250" controls>
+  <source  src="2ladies.mp4" type="video/mp4">
+  <source src="2ladies.ogg" type="video/ogg">
+</video><br><hr>
+<div style="text-align: left;">
+<button onclick="playPause()">play/pause</button>
+<button onclick="makeBig()">zoomout</button>
+<button onclick="makeSmall()">zoomin</button>
+<button onclick="makenormal()">normal</button><br>
+<video width="300" height="250" id="auto1">
+  <source src="2ladies.mp4" type="video/mp4">
+</video>
+</div>
+<script>
+  var myVideo = document.getElementById ("auto1") 
+  function playPause() {
+   if (myVideo.paused)
+   myVideo.play();
+   else
+   myVideo.pause()
+  }
+  function makeBig() {
+    myVideo.width=560 ;
+  }
+  function makeSmall() {
+    myVideo.width=360 ;
+  }
+  function  makenormal () {
+    myVideo.width =420;
+  }
+
+</script>
+
+
+        <div style="overflow: auto;">
+        <div class="first">
+          <a href="#">this is  done </a>
+          <a href="#">with css selector </a>
+        </div>
+        <div class="center">
+
+          <p>zoom in&out this words will definately fit the screen phone</p>
+        </div>
+        <div class="last">
+          <p>the auto flow also has hand in this,in phone this will work</p>
+        </div>
+        </div>
+<article class="parent-article"><h1>article is an indipendent content</h1>
+  <article class="articlef"> the first one is this</article>
+  <article class="articlef"><p>this is 2 article styled </p></article>
+
+</article>
+
+<p style="font-size: 5vw;"> the  three border boxs below are product of
+   media query responsive web page
+ </p>
+        <div class="left"><p>my left menu</p>
+        </div>
+        <div class="main"><p> my main menu</p></div>
+        <div class="right"><p>my left content</p></div>
+        <img src="thumbsup.png"width="100"height="100"></img><br>
+        <img src="images/eye.jpg"style="width:40px;height:40px;">
+        <a href="https://www.matasakablognu.home.blog/">
+            <br>
+            <img src="smiley_hand.jpg"style="width: 40px;height: 40px;"></a><hr>
+            <a href="https://www.matasakablognu.home.blog/"target="-blank">
+              <img src="smiley_hand.jpg"style="width:30px;height:30px;">
+              <p>the link above,i appilied the target attribute with the
+                -blank value which opens  url in a new window.there also other values
+                examples:-parent=opens the document in the parent frame
+                ,-self=opening in the same window & tab as it was 
+                clicked from &-top=opening in full of the window
+              </p>
+          
+            </a>
+            <hr>
+ <button onclick="https://www.matasakablognu.home.blog/"><img src="thumbsup.png"
+    style="width:19px;height:19px;"></button>
+<br>
+ <a href="https://www.matasakablognu.home.blog/"title="my website"> my worldpress</a>
+ <prE><b> begining coding.
+    <sub> down down satan</sub>and<sup> up up  jesus.</sup>
+    the pre element has its own defined fixed width font
+    and still retain any space         given
+     with
+     line break of its own.while the b element is making t bold</b>
+ </prE>
+ the smp element gives out display in monospace style <samp>virus don't click<br>
+  exit now!
+ </samp><br>
+keyboard element to input in keyboard form,type<kbd> ctrl+w</kbd> to go back to
+  previous browser window
+ <div><code> x=5;
+  y=6;
+  z=x+y;
+ </code></div>
+ <img src="pic_trulli.jpg"width=150px;height=150px;><cite>i used cite tag to define 
+  this a unique houses</cite></img>
+ <hr>
+<p> The price  for one bag  of sachet water was 
+  <del>250 naira</del> but is now<ins>300 naira</ins> </p>
+  <bdo dir="rtl">this is bi directional override meaning it will displayed
+    base on the attribute dir value content<mark>rlt or ltr.</mark>
+  </bdo>
+<br>
+<p> i schooled at <abbr title="redeemed child college">RCC</abbr></p>
+<p>am so<del> lazy</del>enthusiatic about programming </p>
+<br>
+<blockquote style="color: turquoise;">i know if i continue with my pace of studying,
+   i would be a great developer to posterity.
+   So Help Me GOD.</blockquote>
+  <p style="text-align: center;border:  solid blue;"><q>I Will Do This Incessantly</q></p>
+<p>Always come <mark>here to check more info about html</mark></p>
+ <strong>Proudly Written By chukwuEBUKA</strong><br>
+ <h2 style="border: 2px solid violet;">my first border</h2>
+ <h1 style="border: 2px solid Violet;">Hello World</h1><hr>
+ <p style="background-color: rgb(255, 0, 0);">rgb red settings</p>
+ <h5 style="color: hsl(250, 88%, 51%);"> hsl deep blue,picked on hue,
+saturaton high  from the 0% gray and low lightness make it thicker
+</h5>
+<p><a class="highlight" href="https://www.matasakablognu.home.blog/">hover to big web</a></p>
+
+ <p style="color:#00ff00;"> hex in ff set highest</p>
+<p style="color:#a8a8a8;">my hexadecimal in gray,remember gray in hex is half of rrggbb</p>
+<p style="background-color:rgba(0, 255, 0, 0.912)">rgba green alpha</p>
+<p style="background-color: hsla(245, 82%, 44%, 0.254);">blue hsla alpha transparent</p>
+ <address style="text-align:center;border: solid rgba(0, 238, 255, 0.491);">
+   Written by<a href="mailto:geofrey199512@gmail.com">matasaka</a><br>
+  state of origin:imo state</address>
+ <!--w3school very insightful platform for programmers.
+  well this is for storing tags only seen in html document source code
+since this tag are for hiding stuff,i can use it to note or remember
+where i have to make some changes-->
+</body>
+</html>
+
+
+
